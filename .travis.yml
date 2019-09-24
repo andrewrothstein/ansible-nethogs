@@ -7,6 +7,7 @@ branches:
   - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
 dist: xenial
 env:
+- OS=alpine_3.10
 - OS=alpine_3.6
 - OS=alpine_3.7
 - OS=alpine_3.8
@@ -21,6 +22,11 @@ env:
 - OS=fedora_24
 - OS=fedora_25
 - OS=fedora_26
+- OS=fedora_27
+- OS=fedora_28
+- OS=fedora_29
+- OS=fedora_30
+- OS=ubuntu_bionic
 - OS=ubuntu_trusty
 - OS=ubuntu_xenial
 language: python
