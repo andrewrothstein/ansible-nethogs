@@ -1,6 +1,6 @@
 andrewrothstein.nethogs
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-nethogs.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-nethogs)
+![Build Status](https://github.com/andrewrothstein/ansible-nethogs/actions/workflows/build.yml/badge.svg)
 
 Installs [NetHogs](https://github.com/raboof/nethogs)
 
