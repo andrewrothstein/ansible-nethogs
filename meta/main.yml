@@ -1,23 +1,35 @@
-dependencies:
-- role: andrewrothstein.epel
-  version: v1.1.0
+---
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
   description: installs nethogs
   galaxy_tags:
-  - network
-  - monitoring
-  license:
-  - MIT
-  min_ansible_version: 2.0
+    - network
+    - monitoring
+  license: MIT
+  min_ansible_version: '2.0'
+  namespace: andrewrothstein
   platforms:
-  - name: EL
-    versions:
-    - all
-  - name: Fedora
-    versions:
-    - all
-  - name: Ubuntu
-    versions:
-    - all
+    - name: Alpine
+      versions:
+        - all
+    - name: ArchLinux
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - bookworm
+        - bullseye
+    - name: EL
+      versions:
+        - '8'
+        - '9'
+    - name: Fedora
+      versions:
+        - '38'
+        - '39'
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+  role_name: nethogs

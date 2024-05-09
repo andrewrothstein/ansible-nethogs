@@ -1,9 +1,0 @@
----
-- name: install OS pkgs
-  become: yes
-  become_user: root
-  with_items:
-    - nethogs
-  package:
-    name: '{{item}}'
-    state: present

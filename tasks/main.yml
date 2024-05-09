@@ -1,2 +1,10 @@
 ---
-- include_tasks: pkg.yml
+- name: Installing andrewrothstein.epel
+  ansible.builtin.include_role:
+    name: andrewrothstein.epel
+- name: Install OS pkgs
+  become: true
+  become_user: root
+  ansible.builtin.package:
+    name: '{{ nethogs_os_pkgs | default(["nethogs"]) }}'
+    state: present
